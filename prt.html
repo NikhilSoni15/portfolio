@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikhil Soni Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: #007acc;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 10px 0 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background: #005bb5;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h2 {
+            color: #007acc;
+            border-bottom: 2px solid #007acc;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .card {
+            background: #fff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #007acc;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nikhil Soni</h1>
+        <p>New York, NY | ns6062@nyu.edu | +1 (934)-233-1695</p>
+        <p><a href="https://linkedin.com/in/nikhil-soni-7a8645190/" style="color: #fff;">LinkedIn</a></p>
+    </header>
+    <nav>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+    </nav>
+    <section id="education">
+        <h2>Education</h2>
+        <div class="card">
+            <h3>New York University</h3>
+            <p>Master of Science in Computer Science</p>
+            <p>Expected May 2025 | GPA: 3.95/4.00</p>
+        </div>
+        <div class="card">
+            <h3>Manipal University</h3>
+            <p>Bachelor of Technology in Computer Science</p>
+            <p>Aug 2019 - Jul 2023 | CGPA: 9.16/10.00</p>
+        </div>
+    </section>
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="card">
+            <h3>AI/ML Intern</h3>
+            <p>Emerson – Pune, India (Jun 2024 – Aug 2024)</p>
+            <ul>
+                <li>Developed an end to end AI tool for text pattern matching in industrial log data, automating 80% of manual work</li>
+                <li>Applied chain of thought prompting on T5 and BERT improving recognition accuracy to 91% and overall tool efficiency</li>
+                <li>Designed data pipeline, processing 10,000+ text files efficiently saving around 25–30 human hours weekly when performed</li>
+                <li>Collaborated to fine-tune LLMs, reducing model training time by 25% and improving alignment with domain-specific data</li>
+                <li>Generated log files and reports with highlighted sections, improving data traceability for stakeholders</li>
+                <li>Conducted POC on Retrieval-Augmented Generation (RAG) techniques to enhance domain-specific text retrieval</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Data Science Intern</h3>
+            <p>Junglee Games India – Gurugram, India (Jan 2023 – Jul 2023)</p>
+            <ul>
+                <li>Extracted and analyzed Fraud users data using SQL and Python-based EDA to build and optimize predictive models at scale</li>
+                <li>Executed testing and deployment of the "Problem Gamer” model to catch game addicts in a pool of 100 million users</li>
+                <li>Streamlined deployment and monitoring through MLOps pipelines using AWS Lambda, reducing model update time by 18%</li>
+                <li>Implemented a CNN research paper to calculate players Rummy skill score to predict game drop decision with 82% precision</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Software Developer Intern</h3>
+            <p>Hewlett Packard Enterprise – Chandigarh, India (Jun 2022 – Jul 2022)</p>
+            <ul>
+                <li>Built a full-stack application with Django backend and HTML/CSS/JavaScript frontend for intra-team issue reporting</li>
+                <li>Crafted a real-time analytic dashboard to visualize key trends and prioritize actionable insights</li>
+                <li>Deployed the system on AWS using EC2 instances and VPC, ensuring scalability, security, and high availability</li>
+            </ul>
+        </div>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="card">
+            <h3>Personalized Image Generator</h3>
+            <p>Created full-stack app fine-tuning Stable Diffusion XL with DreamBooth and LoRA for personalized prompt based images</p>
+            <p>Built a Flask backend and Gradio-based frontend for real-time, user-specific image generation along with a feedback slider</p>
+            <p>Applied optimizations like gradient checkpointing and mixed-precision training, to enhance performance on limited GPUs</p>
+            <p>Achieved high CLIP scores (36.408) for personalized datasets, showcasing high output quality on brief training times</p>
+        </div>
+        <div class="card">
+            <h3>Web Search Engine</h3>
+            <p>Developed a web crawler and inverted index system, processing 12,000+ web pages to enable large-scale data retrieval</p>
+            <p>Optimized storage with VarByte compression and index sharding, reducing overhead by 30% and improving query speed</p>
+            <p>FEngineered a query processor using BM25 scoring, designing ranking algorithms to handle complex queries with precision</p>
+        </div>
+        <div class="card">
+            <h3>311 Service Optimization for NYC Boroughs</h3>
+            <p>Designed scalable ETL pipelines to process 34 million records, integrating multimodal data for efficient processing</p>
+            <p>Constructed and fine tuned ensemble learning models, achieving 87% accuracy in predicting borough-specific service delays</p>
+            <p>Conducted spatiotemporal analysis to identify inefficiencies, integrating multimodal data to optimize resource allocation</p>
+        </div>
+        <div class="card">
+            <h3>Predem: AI Framework for Early Dementia Prediction Using Deep Learning </h3>
+            <p>Published a deep learning framework for Alzheimer’s disease classification into four stages, leveraging MRI data from ADNI</p>
+            <p>Modeled and compared VGG-16, CNN, and RNN architectures, achieving a maximum accuracy of 89.5% using VGG-16</p>
+        </div>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <p>Programming & Development: Python, SQL, C++, TensorFlow, PyTorch, Keras, NumPy, Hugging Face Transformers</p>
+        <p>Generative AI: BERT, GPT, VideoBERT, sentiment analysis, text generation, video-text alignment, multimodal learning</p>
+        <p>Data Engineering & Cloud: MySQL, MongoDB, Redis, Snowflake, AWS (EC2, S3, Lambda), Azure, Docker, Kubernetes, Airflow</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 Nikhil Soni | Designed by Nikhil</p>
+    </footer>
+</body>
+</html>
